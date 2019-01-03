@@ -1,46 +1,36 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+    <h1 @click="onClick">{{ msg }}</h1>
+    <h2 @click="onClick2">Essential Links</h2>
     <ul>
       <li>
-        <a
-          href="https://vuejs.org"
-          target="_blank"
-        >
+        <a href="https://vuejs.org"
+          target="_blank">
           Core Docs
         </a>
       </li>
       <li>
-        <a
-          href="https://forum.vuejs.org"
-          target="_blank"
-        >
+        <a href="https://forum.vuejs.org"
+          target="_blank">
           Forum
         </a>
       </li>
       <li>
-        <a
-          href="https://chat.vuejs.org"
-          target="_blank"
-        >
+        <a href="https://chat.vuejs.org"
+          target="_blank">
           Community Chat
         </a>
       </li>
       <li>
-        <a
-          href="https://twitter.com/vuejs"
-          target="_blank"
-        >
+        <a href="https://twitter.com/vuejs"
+          target="_blank">
           Twitter
         </a>
       </li>
       <br>
       <li>
-        <a
-          href="http://vuejs-templates.github.io/webpack/"
-          target="_blank"
-        >
+        <a href="http://vuejs-templates.github.io/webpack/"
+          target="_blank">
           Docs for This Template
         </a>
       </li>
@@ -48,34 +38,26 @@
     <h2>Ecosystem</h2>
     <ul>
       <li>
-        <a
-          href="http://router.vuejs.org/"
-          target="_blank"
-        >
+        <a href="http://router.vuejs.org/"
+          target="_blank">
           vue-router
         </a>
       </li>
       <li>
-        <a
-          href="http://vuex.vuejs.org/"
-          target="_blank"
-        >
+        <a href="http://vuex.vuejs.org/"
+          target="_blank">
           vuex
         </a>
       </li>
       <li>
-        <a
-          href="http://vue-loader.vuejs.org/"
-          target="_blank"
-        >
+        <a href="http://vue-loader.vuejs.org/"
+          target="_blank">
           vue-loader
         </a>
       </li>
       <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
+        <a href="https://github.com/vuejs/awesome-vue"
+          target="_blank">
           awesome-vue
         </a>
       </li>
@@ -85,18 +67,28 @@
 
 <script>
 export default {
-  name: 'HelloWorld',
-  data () {
+  name: "HelloWorld",
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: "Welcome to Your Vue.js App"
+    };
+  },
+  methods: {
+    onClick() {
+      console.log("ssss");
+      console.log("22222");
+    },
+    onClick2() {
+      console.log("click2");
     }
   }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
